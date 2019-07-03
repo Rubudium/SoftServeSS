@@ -1,0 +1,11 @@
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\bin\Debug\netcoreapp2.1\RubiksCube.deps.json
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\bin\Debug\netcoreapp2.1\RubiksCube.runtimeconfig.json
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\bin\Debug\netcoreapp2.1\RubiksCube.runtimeconfig.dev.json
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\bin\Debug\netcoreapp2.1\RubiksCube.dll
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\bin\Debug\netcoreapp2.1\RubiksCube.pdb
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.csprojAssemblyReference.cache
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.csproj.CoreCompileInputs.cache
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.AssemblyInfoInputs.cache
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.AssemblyInfo.cs
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.dll
+C:\Users\Hristogret\source\repos\RubiksCube\RubiksCube\obj\Debug\netcoreapp2.1\RubiksCube.pdb
