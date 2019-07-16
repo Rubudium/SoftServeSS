@@ -1,4 +1,4 @@
-﻿namespace RubiksCube
+namespace RubiksCube
 {
 	using System;
 	using System.Collections.Generic;
@@ -10,11 +10,11 @@
 		public Face(sbyte front, sbyte right, sbyte up, sbyte left, sbyte down)
 		{
 			//Each face has 3*3=9 cubies
-			AddCubie(front, left, up); //left up corner cubie
-			AddCubie(front, left, front); //up edge cubie
+			AddCubie(front, left, up); 
+			AddCubie(front, left, front);
 			AddCubie(front, left, down);
 			AddCubie(front, front, up);
-			AddCubie(front, front, front); //center cubie
+			AddCubie(front, front, front); 
 			AddCubie(front, front, down);
 			AddCubie(front, right, up);
 			AddCubie(front, right, front);
@@ -31,6 +31,7 @@
 			get
 			{
 				CubiePosition position = new CubiePosition(a1, a2, a3);
+
 				foreach (Cubie cubie in cubies)
 				{
 					if (cubie.Position.CompareTo(position) == 0)
@@ -83,17 +84,6 @@
 
 		internal List<Cubie> cubies = new List<Cubie>();
 
-		//Colors on my cube
-
-		static Face()
-		{
-			AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Grey, "W");
-			AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Yellow, "Y");
-			AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Magenta, "P");
-			AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Green, "G");
-			AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Red, "R");
-			AddFaceColorMap(Back, "Back", ConsoleColor.BackGroundColor.Blue, "B");
-		}
 
 		public static ConsoleColor.BackGroundColor GetColorForFace(sbyte face)
 		{
@@ -154,6 +144,16 @@
 			rotate = RotateFrontClockwise90Degree(rotate);
 
 			return rotate;
+		}
+
+		static Face()
+		{
+			AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Grey, "W");
+			AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Yellow, "Y");
+			AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Magenta, "P");
+			AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Green, "G");
+			AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Red, "R");
+			AddFaceColorMap(Back, "Back", ConsoleColor.BackGroundColor.Blue, "B");
 		}
 
 		public void ResetFromCubeReader(CubeReader rotate, FaceLayout2D postion, int times)
