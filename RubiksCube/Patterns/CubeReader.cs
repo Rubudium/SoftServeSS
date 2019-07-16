@@ -1,9 +1,9 @@
-﻿namespace RubiksCube
+namespace RubiksCube
 {
 	using System;
 
 
-	//Read the Cube state from Console
+	//Read your own cube from Console
 	public class CubeReader
 	{
 		sbyte[,,] map = new sbyte[6, 3, 3];
@@ -16,9 +16,6 @@
 			}
 		}
 
-		//TODO: Private methods
-
-
 		public Cube ReadCube()
 		{
 			string example =
@@ -28,11 +25,9 @@
 				"y y w;y y y;y y r\n" + //3
 				"g r b;w w w;w w w\n" + //4
 				"p p p;p p p;p p p\n";  //5
-									    //solution:step = 62, 
-									    //path = XFRUR'U'F'YYLU'R'UL'U'RU2YYLU'R'UL'U'RU2R'U'RU'R'U2RU2RUR'URU2R'U2RUR'URU2R'U2YYR2UFB'R2F'BUR2
 
-			Console.WriteLine("Please input the colors of the cube, for example:\n" +
-					example);
+			Console.WriteLine("Please input the colors of the cube, for example:\n"
+				+ example);
 
 			for (int i = 0; i < 6; i++)
 			{
@@ -60,7 +55,6 @@
 
 					for (int j = 0; j < 3; j++)
 					{
-						//rows[j];
 						string[] splitStr = rows[j].Trim().ToUpper().Split(' ');
 
 						if (splitStr.Length != 3)
@@ -76,7 +70,7 @@
 
 							for (int k = 0; k < 3; k++)
 							{
-								string s = splitStr[k].Trim().ToLower();
+								string s = splitStr[k].Trim();
 
 								if (!Face.ColorToFace.ContainsKey(s))
 								{
