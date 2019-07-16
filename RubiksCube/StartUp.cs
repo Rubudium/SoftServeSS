@@ -140,8 +140,8 @@ namespace RubiksCube
 					}
 					else if (isFine)
 					{
-						Cube s = Move.ApplyActions(history.GetCurrent().Clone(), moves);
-						history.AddToHistoryIfNotDuplicate(s);
+						Cube sequence = Move.ApplyActions(history.GetCurrent().Clone(), moves);
+						history.AddToHistoryIfNotDuplicate(sequence);
 					}
 				}
 
